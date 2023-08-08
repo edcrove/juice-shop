@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Práctica de Pruebas de Automatización</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bienvenido a la página de práctica de pruebas de automatización</h1>
+
+      <div id="main-content">
+        <form>
+          <h2>Detalles Personales</h2>
+          <label for="firstname">Nombre:</label><br />
+          <input
+            type="text"
+            id="firstname"
+            name="Nombre"
+            required
+          /><br /><br />
+
+          <label for="lastname">Apellido:</label><br />
+          <input
+            type="text"
+            id="lastname"
+            name="Apellido"
+            required
+          /><br /><br />
+
+          <h2>Preferencias</h2>
+          <label for="favcolor">Color favorito:</label><br />
+          <input
+            type="color"
+            id="favcolor"
+            name="Color favorito"
+            value="#ff0000"
+          /><br /><br />
+
+          <h2>Idioma de programación favorito</h2>
+          <input
+            type="radio"
+            id="python"
+            name="Idioma de programación favorito"
+            value="Python"
+            required
+          />
+          <label for="python">Python</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="Idioma de programación favorito"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label><br />
+          <input
+            type="radio"
+            id="java"
+            name="Idioma de programación favorito"
+            value="Java"
+          />
+          <label for="java">Java</label><br /><br />
+
+          <h2>Sistema operativo favorito</h2>
+          <select id="os" name="Sistema operativo favorito">
+            <option value="Windows">Windows</option>
+            <option value="MacOS">MacOS</option>
+            <option value="Linux">Linux</option></select
+          ><br /><br />
+
+          <h2>Acuerdo</h2>
+          <input
+            type="checkbox"
+            id="agreement"
+            name="Acuerdo"
+            value="Acepto los términos y condiciones"
+          />
+          <label for="agreement">Acepto los términos y condiciones</label
+          ><br /><br />
+
+          <input type="submit" value="Enviar" id="enviar" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
